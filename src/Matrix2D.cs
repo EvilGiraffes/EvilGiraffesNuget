@@ -11,12 +11,13 @@ public class Matrix2D<T>
     public T[,] Value {get; private set;}
     public int Width { get; init; }
     public int Length { get; init; }
+    public int Count { get; init; }
     private bool _initalized = false;
-    
     public Matrix2D(int x, int y)
     {
         Width = x;
         Length = y;
+        Count = Length * Width;
         Value = new T[Length, Width];
     }
     public Matrix2D(int x, int y, T defaultValue): this(x, y)
@@ -57,7 +58,7 @@ public class Matrix2D<T>
     /// <summary>
     /// Get the entire column.
     /// </summary>
-    /// <param name="x">Y Coordinate of the matrix to get the values from.</param>
+    /// <param name="x">X Coordinate of the matrix to get the values from.</param>
     /// <returns>A new array with the values from the column.</returns>
     public T[] Column(int x)
     {
