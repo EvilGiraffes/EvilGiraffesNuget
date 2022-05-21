@@ -72,7 +72,7 @@ public class Matrix2D<T>
     /// <summary>
     /// Set the entire column. 
     /// </summary>
-    /// <param name="x">Y Coordinate of the matrix to set the new values to.</param>
+    /// <param name="x">X Coordinate of the matrix to set the new values to.</param>
     /// <param name="value">The new array to set it to.</param>
     /// <returns>If value has been set.</returns>
     public bool Column(int x, T[] value)
