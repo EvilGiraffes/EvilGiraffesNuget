@@ -1,5 +1,7 @@
 using System.Drawing;
 
+// TODO: Implement ICollection<T> and IEnumerable<T>
+// TODO: Create Index Enumerator
 namespace EvilGiraffes.Collections;
 /// <summary>
 /// A wrapper for a 2 dimensional matrix of any type. 
