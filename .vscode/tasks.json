@@ -22,7 +22,9 @@
                 "build",
                 "${workspaceFolder}/EvilGiraffes.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:NoSummary",
+                "--configuration",
+                "Release"
             ],
             "problemMatcher": "$msCompile"
         },

@@ -5,8 +5,10 @@
     <PackageId>EvilGiraffes</PackageId>
     <Version>1.0.5</Version>
     <Authors>EvilGiraffes</Authors>
+    <Description>A general purpose nuget package</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <IsPackable>true</IsPackable>
 
     <!-- Default -->
     <TargetFramework>net6.0</TargetFramework>
