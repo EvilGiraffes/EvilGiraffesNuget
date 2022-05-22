@@ -19,7 +19,6 @@ public class Matrix2DTest
         _output = output;
         _random = new();
         _outputSeperator = "\t\t";
-        
     }
     [Theory]
     [MemberData(nameof(LengthWidthData))]
@@ -92,7 +91,7 @@ public class Matrix2DTest
     }
     public static IEnumerable<object[]> LengthWidthData()
     {
-        int testAmount = 7;
+        int testAmount = 10;
         int min = 1;
         int max = 30;
         Random random = new();
@@ -103,7 +102,7 @@ public class Matrix2DTest
     }
     public static IEnumerable<object[]> InsertLengthWidthData()
     {
-        int testAmount = 7;
+        int testAmount = 10;
         int min = 1;
         int max = 30;
         Random random = new();

@@ -1,18 +1,40 @@
+using System.Collections;
 using System.Drawing;
 
-// TODO: Implement ICollection<T> and IEnumerable<T>
-// TODO: Create Index Enumerator
+using EvilGiraffes.Errors;
+
 namespace EvilGiraffes.Collections;
 /// <summary>
-/// A wrapper for a 2 dimensional matrix of any type. 
+/// A wrapper for a 2 dimensional matrix of any type. Implements IEnumerable. 
 /// </summary>
-public class Matrix2D<T>
+public class Matrix2D<T>: IEnumerable<T>
 {
+    /// <summary>
+    /// The basic 2D array which this class wraps.
+    /// </summary>
+    /// <value>returns T[,].</value>
     public T[,] Value {get; private set;}
+    /// <summary>
+    /// The width (rows) of the matrix.
+    /// </summary>
+    /// <value>returns int.</value>
     public int Width { get; init; }
+    /// <summary>
+    /// The length (columns) of the matrix.
+    /// </summary>
+    /// <value>returns int.</value>
     public int Length { get; init; }
+    /// <summary>
+    /// The count of all values in the matrix, Lenght * Width.
+    /// </summary>
+    /// <value>returns int.</value>
     public int Count { get; init; }
     private bool _initalized = false;
+    /// <summary>
+    /// Constructs a new instance of a matrix.
+    /// </summary>
+    /// <param name="x">Width of the matrix.</param>
+    /// <param name="y">Length of the matrix.</param>
     public Matrix2D(int x, int y)
     {
         Width = x;
@@ -20,11 +42,27 @@ public class Matrix2D<T>
         Count = Length * Width;
         Value = new T[Length, Width];
     }
+    /// <summary>
+    /// Constructs a new instance of a matrix.
+    /// </summary>
+    /// <param name="x">Width of the matrix.</param>
+    /// <param name="y">Length of the matrix.</param>
+    /// <param name="defaultValue">A default value to instanciate it with.</param>
     public Matrix2D(int x, int y, T defaultValue): this(x, y)
     {
         Initalize(defaultValue);
     }
+    /// <summary>
+    /// Constructs a new instance of a matrix.
+    /// </summary>
+    /// <param name="point">A point struct containing X (Width) and Y (Length) values.</param>
     public Matrix2D(Point point): this(point.X, point.Y) {}
+    /// <summary>
+    /// Constructs a new instance of a matrix.
+    /// </summary>
+    /// <param name="point">A point struct containing X (Width) and Y (Length) values.</param>
+    /// <param name="defaultValue">A default value to instanciate it with.</param>
+    /// <returns></returns>
     public Matrix2D(Point point, T defaultValue): this(point.X, point.Y, defaultValue) {}
     /// <summary>
     /// Get the entire row.
@@ -44,8 +82,8 @@ public class Matrix2D<T>
     /// Set the entire row. 
     /// </summary>
     /// <param name="y">Y Coordinate of the matrix to set the new values to.</param>
-    /// <param name="value">The new array to set it to</param>
-    /// <returns>If value has been set.</returns>
+    /// <param name="value">The new array to set it to.</param>
+    /// <returns>TRUE if value has been set, FALSE if value is unchanged.</returns>
     public bool Row(int y, T[] value)
     {
         if (value.Length != Width) return false;
@@ -74,7 +112,7 @@ public class Matrix2D<T>
     /// </summary>
     /// <param name="x">X Coordinate of the matrix to set the new values to.</param>
     /// <param name="value">The new array to set it to.</param>
-    /// <returns>If value has been set.</returns>
+    /// <returns>TRUE if value has been set, FALSE if value is unchanged.</returns>
     public bool Column(int x, T[] value)
     {
         if (value.Length != Length) return false;
@@ -85,18 +123,18 @@ public class Matrix2D<T>
         return true;
     }
     /// <summary>
-    /// Will return or set values based on index's 
+    /// Will return or set values based on index's.
     /// </summary>
-    /// <value>Accesses the matrix via index's.</value>
+    /// <value>return T type.</value>
     public T this[int x, int y]
     {
         get => Value[y, x]; 
         set => Value[y, x] = value;
     }
     /// <summary>
-    /// Will return or set values based on Point 
+    /// Will return or set values based on Point.
     /// </summary>
-    /// <value>Accesses the matrix via index's.</value>
+    /// <value>return T type.</value>
     public T this[Point point]
     {
         get => this[point.X, point.Y];
@@ -105,11 +143,11 @@ public class Matrix2D<T>
     /// <summary>
     /// Initalizes the Matrix with default values.
     /// </summary>
-    /// <param name="defaultValue"> The value to initalize</param>
+    /// <param name="defaultValue"> The value to initalize.</param>
     /// <exception>MatrixInitializedException</exception>
     public void Initalize(T defaultValue)
     {
-        if (_initalized is true) throw new Errors.MatrixInitializedException();
+        if (_initalized is true) throw new MatrixInitializedException();
         for (int y = 0; y < Length; y++)
         {
             for (int x = 0; x < Width; x++)
@@ -119,4 +157,27 @@ public class Matrix2D<T>
         }
         _initalized = true;
     }
+    /// <summary>
+    /// Will give an enumerator which will give index's of the entire array instead of directly enumerating.
+    /// </summary>
+    /// <returns>IEnumerator of type Point.</returns>
+    public IEnumerator<Point> GetIndexEnumerator()
+    {
+        for (int y = 0; y < Length; y++)
+        {
+            for (int x = 0; x < Width; x++)
+            {
+                yield return new Point(x, y);
+            }
+        }
+    }
+    /// <summary>
+    /// Will give an Enumerator to enumerate over values inside matrix.
+    /// </summary>
+    /// <returns>IEnumerator of type T.</returns>
+    public IEnumerator<T> GetEnumerator() 
+    {
+        foreach (T val in Value) yield return val;
+    }
+    IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
 }
