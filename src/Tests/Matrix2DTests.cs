@@ -8,7 +8,6 @@ using EvilGiraffes.Collections;
 using EvilGiraffes.Errors;
 
 namespace EvilGiraffes.Tests;
-
 public class Matrix2DTest
 {
     private readonly ITestOutputHelper _output;

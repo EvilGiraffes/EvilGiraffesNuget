@@ -148,12 +148,9 @@ public class Matrix2D<T>: IEnumerable<T>
     public void Initalize(T defaultValue)
     {
         if (_initalized is true) throw new MatrixInitializedException();
-        for (int y = 0; y < Length; y++)
+        foreach (Point index in GetIndexEnumerator())
         {
-            for (int x = 0; x < Width; x++)
-            {
-                this[x, y] = defaultValue;
-            }
+            this[index] = defaultValue;
         }
         _initalized = true;
     }
@@ -161,7 +158,7 @@ public class Matrix2D<T>: IEnumerable<T>
     /// Will give an enumerator which will give index's of the entire array instead of directly enumerating.
     /// </summary>
     /// <returns>IEnumerator of type Point.</returns>
-    public IEnumerator<Point> GetIndexEnumerator()
+    public IEnumerable<Point> GetIndexEnumerator()
     {
         for (int y = 0; y < Length; y++)
         {

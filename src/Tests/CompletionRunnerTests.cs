@@ -1,5 +1,4 @@
 using Xunit;
-using Xunit.Sdk;
 using Xunit.Abstractions;
 
 using EvilGiraffes.Functools;
