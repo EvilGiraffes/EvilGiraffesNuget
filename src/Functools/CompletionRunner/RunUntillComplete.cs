@@ -4,16 +4,22 @@ namespace EvilGiraffes.Functools;
 /// </summary>
 public class RunUntillComplete: RunUntillCompleteBase
 {
-    private IRunner _runner;
+    private Action<RunUntillComplete> _func;
+    /// <summary>
+    /// Will construct a new instance of a completion runner. 
+    /// </summary>
+    /// <param name="func">The function that should run in the loop.</param>
+    /// <param name="maxTries"><inheritdoc cref="RunUntillCompleteBase.RunUntillCompleteBase" /> Number is Inclusive.</param>
+    public RunUntillComplete(Action<RunUntillComplete> func, int maxTries = -1): base(maxTries) 
+    {
+        _func = func;
+    } 
     /// <summary>
     /// Will construct a new instance of a completion runner.
     /// </summary>
     /// <param name="runner">The runner function in which should run in the loop.</param>
-    /// <param name="maxTries"><inheritdoc cref="RunUntillCompleteBase.RunUntillCompleteBase" /></param>
-    public RunUntillComplete(IRunner runner, int maxTries = -1): base(maxTries)
-    {
-        _runner = runner;
-    }
+    /// <param name="maxTries"><inheritdoc cref="RunUntillCompleteBase.RunUntillCompleteBase" /> Number is Inclusive.</param>
+    public RunUntillComplete(IRunner runner, int maxTries = -1): this(runner.Execute, maxTries) {}
     /// <summary>
     /// Starts the loop.
     /// </summary>
@@ -26,11 +32,11 @@ public class RunUntillComplete: RunUntillCompleteBase
     }
     private void _Run()
     {
-        bool success;
         do
         {
-            success = _runner.Execute(this);
-        } while (success is false && _Continue() is true);
+            CurrentTries++;
+            _func(this);
+        } while (_Continue() is true);
     }
 }
 /// <summary>
@@ -39,12 +45,22 @@ public class RunUntillComplete: RunUntillCompleteBase
 /// <typeparam name="TReturn">The value to return.</typeparam>
 public class RunUntillComplete<TReturn>: RunUntillCompleteBase
 {
-    private IRunner<TReturn> _runner;
-    /// <inheritdoc cref="RunUntillComplete.RunUntillComplete"/>
-    public RunUntillComplete(IRunner<TReturn> runner, int maxTries = -1): base(maxTries)
+    private Func<RunUntillComplete<TReturn>, TReturn> _func;
+    /// <summary>
+    /// Will construct a new instance of a completion runner.
+    /// </summary>
+    /// <param name="func">The function that should run in the loop.</param>
+    /// <param name="maxTries"><inheritdoc cref="RunUntillCompleteBase.RunUntillCompleteBase" /> Number is Inclusive.</param>
+    public RunUntillComplete(Func<RunUntillComplete<TReturn>, TReturn> func, int maxTries = -1): base(maxTries) 
     {
-        _runner = runner;
+        _func = func;
     }
+    /// <summary>
+    /// Will construct a new instance of a completion runner.
+    /// </summary>
+    /// <param name="runner">The runner function in which should run in the loop.</param>
+    /// <param name="maxTries"><inheritdoc cref="RunUntillCompleteBase.RunUntillCompleteBase" /> Number is Inclusive.</param>
+    public RunUntillComplete(IRunner<TReturn> runner, int maxTries = -1): this(runner.Execute, maxTries) {}
     /// <summary>
     /// <inheritdoc cref="RunUntillComplete.Execute"/>
     /// </summary>
@@ -59,13 +75,11 @@ public class RunUntillComplete<TReturn>: RunUntillCompleteBase
     private TReturn _Run()
     {
         TReturn result;
-        bool success;
         do
         {
-            (TReturn, bool) executionResult = _runner.Execute(this);
-            result = executionResult.Item1;
-            success = executionResult.Item2;
-        } while (success is false && _Continue() is true);
+            CurrentTries++;
+            result = _func(this);
+        } while (_Continue() is true);
         return result; 
     }
 }

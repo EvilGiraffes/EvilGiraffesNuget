@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TestDebug",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildDebug",
+            "program": "dotnet",
+            "args": [
+                "test",
+                "--logger",
+                "trx",
+                "--results-directory",
+                "src/Tests/TestResults"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "TestRelease",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildRelease",
+            "program": "dotnet",
+            "args": [
+                "test",
+                "--logger",
+                "trx",
+                "--results-directory",
+                "src/Tests/TestResults"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+    ]
+}

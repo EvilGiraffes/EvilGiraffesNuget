@@ -3,7 +3,7 @@
   <PropertyGroup>
     <!-- Package Info -->
     <PackageId>EvilGiraffes</PackageId>
-    <Version>1.0.5</Version>
+    <Version>1.0.7</Version>
     <Authors>EvilGiraffes</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
