@@ -1,4 +1,4 @@
-[![GitHub Actions Status](https://github.com/actions/setup-dotnet/workflows/Main%20workflow/badge.svg)](https://github.com/actions/setup-dotnet)
+[![GitHub Actions Status]](https://github.com/EvilGiraffes/EvilGiraffesNuget/actions/workflows/test-dotnet.yml/badge.svg)
 
 # Hello!
 
