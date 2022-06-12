@@ -3,7 +3,7 @@
   <PropertyGroup>
     <!-- Package Info -->
     <PackageId>EvilGiraffes</PackageId>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <Authors>EvilGiraffes</Authors>
     <Description>A general purpose nuget package</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

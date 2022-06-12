@@ -2,20 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Test",
-            "command": "dotnet",
-            "type": "shell",
-            "args": [
-                "test",
-                "--logger",
-                "trx",
-                "--results-directory",
-                "src/Tests/TestResults"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "build",
+            "label": "buildDebug",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -27,6 +14,18 @@
                 "Release"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "buildRelease",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/EvilGiraffes.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "--configuration",
+                "Release"
+            ]
         },
         {
             "label": "publish",
