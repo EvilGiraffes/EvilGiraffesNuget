@@ -2,25 +2,39 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "buildDebug",
+            "label": "allBuildDebug",
+            "dependsOn": [
+                "mainBuildDebug",
+                "testsBuildDebug"
+            ]
+        },
+        {
+            "label": "allBuildRelease",
+            "dependsOn": [
+                "mainBuildRelease",
+                "testsBuildRelease"
+            ]
+        },
+        {
+            "label": "mainBuildDebug",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/EvilGiraffes.csproj",
+                "${workspaceFolder}/EvilGiraffes/EvilGiraffes.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary",
                 "--configuration",
-                "Release"
+                "Debug"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "buildRelease",
+            "label": "mainBuildRelease",
             "command": "dotnet",
             "args": [
                 "build",
-                "${workspaceFolder}/EvilGiraffes.csproj",
+                "${workspaceFolder}/EvilGiraffes/EvilGiraffes.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary",
                 "--configuration",
@@ -28,28 +42,30 @@
             ]
         },
         {
-            "label": "publish",
+            "label": "testsBuildDebug",
             "command": "dotnet",
             "type": "process",
             "args": [
-                "publish",
-                "${workspaceFolder}/EvilGiraffes.csproj",
+                "build",
+                "${workspaceFolder}/EvilGiraffes.Tests/EvilGiraffes.Tests.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:NoSummary",
+                "--configuration",
+                "Debug"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "watch",
+            "label": "testsBuildRelease",
             "command": "dotnet",
-            "type": "process",
             "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/EvilGiraffes.csproj"
-            ],
-            "problemMatcher": "$msCompile"
-        }
+                "build",
+                "${workspaceFolder}/EvilGiraffes.Tests/EvilGiraffes.Tests.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "--configuration",
+                "Release"
+            ]
+        },
     ]
 }

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1f41b62c-399e-4366-8a1b-6ae7db846c49" name="Thomas@DESKTOP-5RCCEB2 2022-06-12 21:50:30" runUser="DESKTOP-5RCCEB2\Thomas" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-06-12T21:50:30.7611784+02:00" queuing="2022-06-12T21:50:30.7611784+02:00" start="2022-06-12T21:50:30.0955631+02:00" finish="2022-06-12T21:50:31.1073681+02:00" />
+  <TestSettings name="default" id="fb6e999a-4cba-4dd7-9b9b-5f926ebd9d17">
+    <Deployment runDeploymentRoot="Thomas_DESKTOP-5RCCEB2_2022-06-12_21_50_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="27275dbc-7448-4829-b35c-d67446ecdc91" testId="6bf01e36-f561-967d-ea5c-cbc0efdbdb47" testName="EvilGiraffes.Tests.Matrix2DTest.ColumnOffsetTest(inserted: 359, length: 533, width: 371)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0017093" startTime="2022-06-12T21:50:31.0675937+02:00" endTime="2022-06-12T21:50:31.0675938+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27275dbc-7448-4829-b35c-d67446ecdc91" />
+    <UnitTestResult executionId="6dba42ed-9a96-4e02-9c3e-ea25a942e75b" testId="8fbe735e-7c3a-20fe-28af-5a2f470a33b2" testName="EvilGiraffes.Tests.CompletionRunnerTest.VoidThreeArgTest(initialValue: 850, additionValues: [447, 4, 477])" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0000636" startTime="2022-06-12T21:50:30.7161635+02:00" endTime="2022-06-12T21:50:30.7161635+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6dba42ed-9a96-4e02-9c3e-ea25a942e75b">
+      <Output>
+        <StdOut>Initial: 850		Expected: 93650		Actual: 93650</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6c665bb4-7a07-454f-b717-f7873296c7c9" testId="5274b1c8-aeb0-75c6-674e-e9e42003201a" testName="EvilGiraffes.Tests.Matrix2DTest.InitializationExceptionTest(length: 690, width: 132)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0010516" startTime="2022-06-12T21:50:30.7412315+02:00" endTime="2022-06-12T21:50:30.7412315+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c665bb4-7a07-454f-b717-f7873296c7c9">
+      <Output>
+        <StdOut>Expected: MatrixInitializedException		Outputted: MatrixInitializedException</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="02bd010f-645a-4f57-87ee-753c04f41d30" testId="853b9759-736b-6f3c-6e69-e1295e6d6455" testName="EvilGiraffes.Tests.Matrix2DTest.PropertyTest(length: 592, width: 634)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0048941" startTime="2022-06-12T21:50:30.7155562+02:00" endTime="2022-06-12T21:50:30.7155563+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02bd010f-645a-4f57-87ee-753c04f41d30">
+      <Output>
+        <StdOut>Matrix: Length: 592, Width: 634, Count: 375328		Expected: Lenght: 592, Width: 634, Count: 375328</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e18fe517-49a9-4268-8565-3536e9e439b6" testId="f01aca5f-89b9-ab46-82ad-fa27b60497de" testName="EvilGiraffes.Tests.CompletionRunnerTest.ReturnTwoArgTest(initialValue: 79, additionValues: [218, 734, 291])" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0000637" startTime="2022-06-12T21:50:30.7162479+02:00" endTime="2022-06-12T21:50:30.7162479+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e18fe517-49a9-4268-8565-3536e9e439b6">
+      <Output>
+        <StdOut>Initial: 79		Expected: 1031		Actual: 1031</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4decf08-08a9-44da-8b86-a18b73a3e546" testId="059c8596-612c-4d06-8d6f-badb00aa5a6c" testName="EvilGiraffes.Tests.CompletionRunnerTest.ReturnOneArgTest(initialValue: 179, additionValues: [928, 648, 718])" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0044571" startTime="2022-06-12T21:50:30.7132163+02:00" endTime="2022-06-12T21:50:30.7132299+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4decf08-08a9-44da-8b86-a18b73a3e546">
+      <Output>
+        <StdOut>Initial: 179		Expected: 1107		Actual: 1107</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6c3de4dd-c475-4206-b40a-4c51cf8393b3" testId="b13e1124-7d53-16c2-6d4e-ded73878a004" testName="EvilGiraffes.Tests.Matrix2DTest.ColumnTest(inserted: 116, length: 534, width: 484)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0023248" startTime="2022-06-12T21:50:31.0658590+02:00" endTime="2022-06-12T21:50:31.0658591+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c3de4dd-c475-4206-b40a-4c51cf8393b3" />
+    <UnitTestResult executionId="d2bac9ae-ff27-4039-9254-70aaa7677e79" testId="ea94f1cd-3938-d76b-5625-8a5fbd3f64fe" testName="EvilGiraffes.Tests.CompletionRunnerTest.ReturnThreeArgTest(initialValue: 748, additionValues: [361, 323, 263])" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0000608" startTime="2022-06-12T21:50:30.7163306+02:00" endTime="2022-06-12T21:50:30.7163306+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2bac9ae-ff27-4039-9254-70aaa7677e79">
+      <Output>
+        <StdOut>Initial: 748		Expected: 1695		Actual: 1695</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d166c7e7-d416-4ffa-81be-22b8273c2bc7" testId="a1995e50-cd39-5d63-182f-5c3825835d39" testName="EvilGiraffes.Tests.Matrix2DTest.InitializationFunctionTest(length: 863, width: 940)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.3212420" startTime="2022-06-12T21:50:31.0634824+02:00" endTime="2022-06-12T21:50:31.0634826+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d166c7e7-d416-4ffa-81be-22b8273c2bc7" />
+    <UnitTestResult executionId="99d0fa98-fe05-4961-bc3a-9fc65c5c0053" testId="016a6f39-eb85-c341-b291-9d0f921a4b0a" testName="EvilGiraffes.Tests.Matrix2DTest.IndexIntTest(inserted: 411, length: 956, width: 384)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0029541" startTime="2022-06-12T21:50:30.7412521+02:00" endTime="2022-06-12T21:50:30.7412522+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99d0fa98-fe05-4961-bc3a-9fc65c5c0053">
+      <Output>
+        <StdOut>Params: Inserted: 411, Length: 956, Width: 384		Internal: X: 147, Y: 357</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="59253dad-f449-4fb6-9064-a78957d18a0b" testId="bdb9e4d2-3a13-5854-0931-f4168f36dd25" testName="EvilGiraffes.Tests.Matrix2DTest.ColumnSetterExceptionTest(length: 75, width: 601)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0010674" startTime="2022-06-12T21:50:30.7412106+02:00" endTime="2022-06-12T21:50:30.7412107+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59253dad-f449-4fb6-9064-a78957d18a0b">
+      <Output>
+        <StdOut>Expected: MatrixOutOfBoundsException		Outputted: MatrixOutOfBoundsException</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a313f38e-2bd1-4e30-9164-80bbc41f7c16" testId="12773a1e-4d2f-4c7b-42b7-d6878c1509ba" testName="EvilGiraffes.Tests.Matrix2DTest.RowOffsetTest(inserted: 773, length: 443, width: 268)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0012590" startTime="2022-06-12T21:50:30.7411874+02:00" endTime="2022-06-12T21:50:30.7411875+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a313f38e-2bd1-4e30-9164-80bbc41f7c16" />
+    <UnitTestResult executionId="853ddbb5-b720-4c08-a2dd-cc3294914975" testId="5fa5682d-8011-e9ef-0c3b-54c5b96125ef" testName="EvilGiraffes.Tests.CompletionRunnerTest.VoidTwoArgTest(initialValue: 725, additionValues: [706, 339, 706])" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0004595" startTime="2022-06-12T21:50:30.7160096+02:00" endTime="2022-06-12T21:50:30.7160097+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="853ddbb5-b720-4c08-a2dd-cc3294914975">
+      <Output>
+        <StdOut>Initial: 725		Expected: 105225		Actual: 105225</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8625aebb-26b0-40da-a5b3-c23017a666bc" testId="625bc286-a346-27be-b34e-106699a97821" testName="EvilGiraffes.Tests.CompletionRunnerTest.VoidOneArgTest(initialValue: 656, additionValues: [491, 828, 903])" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0000508" startTime="2022-06-12T21:50:30.7410451+02:00" endTime="2022-06-12T21:50:30.7410452+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8625aebb-26b0-40da-a5b3-c23017a666bc">
+      <Output>
+        <StdOut>Initial: 656		Expected: 49756		Actual: 49756</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="318ebd83-22de-4f37-9d74-d746487911dd" testId="9561f694-e24d-936b-0723-80ec39a40666" testName="EvilGiraffes.Tests.Matrix2DTest.IndexPointTest(inserted: 163, length: 598, width: 949)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0094033" startTime="2022-06-12T21:50:30.7411676+02:00" endTime="2022-06-12T21:50:30.7411676+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="318ebd83-22de-4f37-9d74-d746487911dd">
+      <Output>
+        <StdOut>Params: Inserted: 163, Length: 598, Width: 949		Internal: X: 658, Y: 568</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e9081a38-b718-4146-84ac-3a10276f80f0" testId="84634cb2-6e97-ab5f-ce8c-9875bf7456b9" testName="EvilGiraffes.Tests.Matrix2DTest.RowSetterExceptionTest(length: 676, width: 831)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0049917" startTime="2022-06-12T21:50:30.7421281+02:00" endTime="2022-06-12T21:50:30.7421282+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9081a38-b718-4146-84ac-3a10276f80f0">
+      <Output>
+        <StdOut>Expected: MatrixOutOfBoundsException		Outputted: MatrixOutOfBoundsException</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="56154853-8a19-4be4-b962-ce9d8171c4b0" testId="9fe4faa3-5a89-ffd8-a893-14d917bd2d41" testName="EvilGiraffes.Tests.Matrix2DTest.RowTest(inserted: 655, length: 671, width: 882)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0086775" startTime="2022-06-12T21:50:30.7411403+02:00" endTime="2022-06-12T21:50:30.7411404+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56154853-8a19-4be4-b962-ce9d8171c4b0" />
+    <UnitTestResult executionId="34287200-ec4e-4ee9-9d2c-8b0c875ddf21" testId="21f8475e-198b-7b5f-4a4b-0bf69ca74457" testName="EvilGiraffes.Tests.CompletionRunnerTest.VoidTriesTest(runs: 5)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0001813" startTime="2022-06-12T21:50:30.7162966+02:00" endTime="2022-06-12T21:50:30.7162966+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34287200-ec4e-4ee9-9d2c-8b0c875ddf21">
+      <Output>
+        <StdOut>Initial: 5		Current Tries: 5</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dcb8c2d5-7bf3-41fd-8aee-98ce21b3034c" testId="9dfaa045-84e4-d901-9791-346b78ee6931" testName="EvilGiraffes.Tests.CompletionRunnerTest.ReturnTriesTest(runs: 5)" computerName="DESKTOP-5RCCEB2" duration="00:00:00.0004015" startTime="2022-06-12T21:50:30.7161926+02:00" endTime="2022-06-12T21:50:30.7161926+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcb8c2d5-7bf3-41fd-8aee-98ce21b3034c">
+      <Output>
+        <StdOut>Initial: 5		Current Tries: 5</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.InitializationExceptionTest(length: 690, width: 132)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="5274b1c8-aeb0-75c6-674e-e9e42003201a">
+      <Execution id="6c665bb4-7a07-454f-b717-f7873296c7c9" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="InitializationExceptionTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.ReturnTriesTest(runs: 5)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="9dfaa045-84e4-d901-9791-346b78ee6931">
+      <Execution id="dcb8c2d5-7bf3-41fd-8aee-98ce21b3034c" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="ReturnTriesTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.VoidOneArgTest(initialValue: 656, additionValues: [491, 828, 903])" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="625bc286-a346-27be-b34e-106699a97821">
+      <Execution id="8625aebb-26b0-40da-a5b3-c23017a666bc" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="VoidOneArgTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.ColumnSetterExceptionTest(length: 75, width: 601)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="bdb9e4d2-3a13-5854-0931-f4168f36dd25">
+      <Execution id="59253dad-f449-4fb6-9064-a78957d18a0b" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="ColumnSetterExceptionTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.VoidTriesTest(runs: 5)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="21f8475e-198b-7b5f-4a4b-0bf69ca74457">
+      <Execution id="34287200-ec4e-4ee9-9d2c-8b0c875ddf21" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="VoidTriesTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.ColumnTest(inserted: 116, length: 534, width: 484)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="b13e1124-7d53-16c2-6d4e-ded73878a004">
+      <Execution id="6c3de4dd-c475-4206-b40a-4c51cf8393b3" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="ColumnTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.ColumnOffsetTest(inserted: 359, length: 533, width: 371)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="6bf01e36-f561-967d-ea5c-cbc0efdbdb47">
+      <Execution id="27275dbc-7448-4829-b35c-d67446ecdc91" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="ColumnOffsetTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.IndexPointTest(inserted: 163, length: 598, width: 949)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="9561f694-e24d-936b-0723-80ec39a40666">
+      <Execution id="318ebd83-22de-4f37-9d74-d746487911dd" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="IndexPointTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.VoidThreeArgTest(initialValue: 850, additionValues: [447, 4, 477])" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="8fbe735e-7c3a-20fe-28af-5a2f470a33b2">
+      <Execution id="6dba42ed-9a96-4e02-9c3e-ea25a942e75b" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="VoidThreeArgTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.VoidTwoArgTest(initialValue: 725, additionValues: [706, 339, 706])" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="5fa5682d-8011-e9ef-0c3b-54c5b96125ef">
+      <Execution id="853ddbb5-b720-4c08-a2dd-cc3294914975" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="VoidTwoArgTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.PropertyTest(length: 592, width: 634)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="853b9759-736b-6f3c-6e69-e1295e6d6455">
+      <Execution id="02bd010f-645a-4f57-87ee-753c04f41d30" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="PropertyTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.InitializationFunctionTest(length: 863, width: 940)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="a1995e50-cd39-5d63-182f-5c3825835d39">
+      <Execution id="d166c7e7-d416-4ffa-81be-22b8273c2bc7" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="InitializationFunctionTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.RowSetterExceptionTest(length: 676, width: 831)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="84634cb2-6e97-ab5f-ce8c-9875bf7456b9">
+      <Execution id="e9081a38-b718-4146-84ac-3a10276f80f0" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="RowSetterExceptionTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.RowTest(inserted: 655, length: 671, width: 882)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="9fe4faa3-5a89-ffd8-a893-14d917bd2d41">
+      <Execution id="56154853-8a19-4be4-b962-ce9d8171c4b0" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="RowTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.ReturnThreeArgTest(initialValue: 748, additionValues: [361, 323, 263])" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="ea94f1cd-3938-d76b-5625-8a5fbd3f64fe">
+      <Execution id="d2bac9ae-ff27-4039-9254-70aaa7677e79" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="ReturnThreeArgTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.ReturnOneArgTest(initialValue: 179, additionValues: [928, 648, 718])" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="059c8596-612c-4d06-8d6f-badb00aa5a6c">
+      <Execution id="f4decf08-08a9-44da-8b86-a18b73a3e546" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="ReturnOneArgTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.RowOffsetTest(inserted: 773, length: 443, width: 268)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="12773a1e-4d2f-4c7b-42b7-d6878c1509ba">
+      <Execution id="a313f38e-2bd1-4e30-9164-80bbc41f7c16" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="RowOffsetTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.Matrix2DTest.IndexIntTest(inserted: 411, length: 956, width: 384)" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="016a6f39-eb85-c341-b291-9d0f921a4b0a">
+      <Execution id="99d0fa98-fe05-4961-bc3a-9fc65c5c0053" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.Matrix2DTest" name="IndexIntTest" />
+    </UnitTest>
+    <UnitTest name="EvilGiraffes.Tests.CompletionRunnerTest.ReturnTwoArgTest(initialValue: 79, additionValues: [218, 734, 291])" storage="d:\programmering\vscodeprojects\evilgiraffesnuget\evilgiraffes.tests\bin\debug\net6.0\evilgiraffes.tests.dll" id="f01aca5f-89b9-ab46-82ad-fa27b60497de">
+      <Execution id="e18fe517-49a9-4268-8565-3536e9e439b6" />
+      <TestMethod codeBase="D:\Programmering\VScodeProjects\EvilGiraffesNuget\EvilGiraffes.Tests\bin\Debug\net6.0\EvilGiraffes.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EvilGiraffes.Tests.CompletionRunnerTest" name="ReturnTwoArgTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="6bf01e36-f561-967d-ea5c-cbc0efdbdb47" executionId="27275dbc-7448-4829-b35c-d67446ecdc91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8fbe735e-7c3a-20fe-28af-5a2f470a33b2" executionId="6dba42ed-9a96-4e02-9c3e-ea25a942e75b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5274b1c8-aeb0-75c6-674e-e9e42003201a" executionId="6c665bb4-7a07-454f-b717-f7873296c7c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="853b9759-736b-6f3c-6e69-e1295e6d6455" executionId="02bd010f-645a-4f57-87ee-753c04f41d30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f01aca5f-89b9-ab46-82ad-fa27b60497de" executionId="e18fe517-49a9-4268-8565-3536e9e439b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="059c8596-612c-4d06-8d6f-badb00aa5a6c" executionId="f4decf08-08a9-44da-8b86-a18b73a3e546" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b13e1124-7d53-16c2-6d4e-ded73878a004" executionId="6c3de4dd-c475-4206-b40a-4c51cf8393b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea94f1cd-3938-d76b-5625-8a5fbd3f64fe" executionId="d2bac9ae-ff27-4039-9254-70aaa7677e79" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1995e50-cd39-5d63-182f-5c3825835d39" executionId="d166c7e7-d416-4ffa-81be-22b8273c2bc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="016a6f39-eb85-c341-b291-9d0f921a4b0a" executionId="99d0fa98-fe05-4961-bc3a-9fc65c5c0053" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdb9e4d2-3a13-5854-0931-f4168f36dd25" executionId="59253dad-f449-4fb6-9064-a78957d18a0b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12773a1e-4d2f-4c7b-42b7-d6878c1509ba" executionId="a313f38e-2bd1-4e30-9164-80bbc41f7c16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5fa5682d-8011-e9ef-0c3b-54c5b96125ef" executionId="853ddbb5-b720-4c08-a2dd-cc3294914975" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="625bc286-a346-27be-b34e-106699a97821" executionId="8625aebb-26b0-40da-a5b3-c23017a666bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9561f694-e24d-936b-0723-80ec39a40666" executionId="318ebd83-22de-4f37-9d74-d746487911dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84634cb2-6e97-ab5f-ce8c-9875bf7456b9" executionId="e9081a38-b718-4146-84ac-3a10276f80f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9fe4faa3-5a89-ffd8-a893-14d917bd2d41" executionId="56154853-8a19-4be4-b962-ce9d8171c4b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21f8475e-198b-7b5f-4a4b-0bf69ca74457" executionId="34287200-ec4e-4ee9-9d2c-8b0c875ddf21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9dfaa045-84e4-d901-9791-346b78ee6931" executionId="dcb8c2d5-7bf3-41fd-8aee-98ce21b3034c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="19" executed="19" passed="19" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.5+1caef2f33e (64-bit .NET 6.0.3)&#xD;
+[xUnit.net 00:00:00.21]   Discovering: EvilGiraffes.Tests&#xD;
+[xUnit.net 00:00:00.25]   Discovered:  EvilGiraffes.Tests&#xD;
+[xUnit.net 00:00:00.25]   Starting:    EvilGiraffes.Tests&#xD;
+[xUnit.net 00:00:00.65]   Finished:    EvilGiraffes.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

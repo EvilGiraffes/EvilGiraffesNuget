@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EvilGiraffes</name>
+    </assembly>
+    <members>
+        <member name="T:EvilGiraffes.Collections.Matrix2D`1">
+            <summary>
+            A wrapper for a 2 dimensional matrix of any type. Implements IEnumerable. 
+            </summary>
+        </member>
+        <member name="P:EvilGiraffes.Collections.Matrix2D`1.Value">
+            <summary>
+            The basic 2D array which this class wraps.
+            </summary>
+            <value>returns T[,].</value>
+        </member>
+        <member name="P:EvilGiraffes.Collections.Matrix2D`1.Width">
+            <summary>
+            The width (rows) of the matrix.
+            </summary>
+            <value>returns int.</value>
+        </member>
+        <member name="P:EvilGiraffes.Collections.Matrix2D`1.Length">
+            <summary>
+            The length (columns) of the matrix.
+            </summary>
+            <value>returns int.</value>
+        </member>
+        <member name="P:EvilGiraffes.Collections.Matrix2D`1.Count">
+            <summary>
+            The count of all values in the matrix, Lenght * Width.
+            </summary>
+            <value>returns int.</value>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructs a new instance of a matrix.
+            </summary>
+            <param name="x">Width of the matrix.</param>
+            <param name="y">Length of the matrix.</param>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.#ctor(System.Int32,System.Int32,System.Func{`0})">
+            <summary>
+            Constructs a new instance of a matrix.
+            </summary>
+            <param name="x">Width of the matrix.</param>
+            <param name="y">Length of the matrix.</param>
+            <param name="defaultValue">Default value to instanciate the matrix with.</param>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.#ctor(System.Int32,System.Int32,`0)">
+            <summary>
+            Constructs a new instance of a matrix.
+            </summary>
+            <param name="x">Width of the matrix.</param>
+            <param name="y">Length of the matrix.</param>
+            <param name="defaultValue">Default value to instanciate the matrix with.</param>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.#ctor(System.Drawing.Point)">
+            <summary>
+            Constructs a new instance of a matrix.
+            </summary>
+            <param name="point">A point struct containing X (Width) and Y (Length) values.</param>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.#ctor(System.Drawing.Point,`0)">
+            <summary>
+            Constructs a new instance of a matrix.
+            </summary>
+            <param name="point">A point struct containing X (Width) and Y (Length) values.</param>
+            <param name="defaultValue">A default value to instanciate it with.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.Row(System.Int32)">
+            <summary>
+            Gets a duplicate of the row.
+            </summary>
+            <param name="y">Y Coordinate of the matrix to get the values from.</param>
+            <returns>A new array with the values from the row.</returns>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.Row(System.Int32,`0[],System.Int32)">
+            <summary>
+            Setter for the row. 
+            </summary>
+            <param name="y">Y Coordinate of the matrix to set the new values to.</param>
+            <param name="value">The new array to set it to.</param>
+            <param name="offset">If the array is shorter than the width of the matrix, offset will move it further to the right.</param>
+            <exception cref="T:EvilGiraffes.Errors.MatrixOutOfBoundsException">Will be thrown if value length + offset is larger than Matrix length.</exception>
+            <returns>TRUE if value has been set, FALSE if value is unchanged.</returns>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.Column(System.Int32)">
+            <summary>
+            Get a duplicate of the column.
+            </summary>
+            <param name="x">X Coordinate of the matrix to get the values from.</param>
+            <returns>A new array with the values from the column.</returns>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.Column(System.Int32,`0[],System.Int32)">
+            <summary>
+            Set the entire column. 
+            </summary>
+            <param name="x">X Coordinate of the matrix to set the new values to.</param>
+            <param name="value">The new array to set it to.</param>
+            <param name="offset">If the array is shorter than the length of the matrix, offset will move it further to the right.</param>
+            <exception cref="T:EvilGiraffes.Errors.MatrixOutOfBoundsException">Will be thrown if value length + offset is larger than Matrix length.</exception>
+            <returns>TRUE if value has been set, FALSE if value is unchanged.</returns>
+        </member>
+        <member name="P:EvilGiraffes.Collections.Matrix2D`1.Item(System.Int32,System.Int32)">
+            <summary>
+            Will return or set values based on index's.
+            </summary>
+            <value>return T type.</value>
+        </member>
+        <member name="P:EvilGiraffes.Collections.Matrix2D`1.Item(System.Drawing.Point)">
+            <summary>
+            Will return or set values based on Point.
+            </summary>
+            <value>return T type.</value>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.Initalize(System.Func{`0})">
+            <summary>
+            Initalizes the Matrix with default values.
+            </summary>
+            <param name="defaultValue">The value to initalize.</param>
+            <exception cref="T:EvilGiraffes.Errors.MatrixInitializedException">Will be thrown if the matrix already has been initialized.</exception>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.Initalize(`0)">
+            <summary>
+            Initalizes the Matrix with default values.
+            </summary>
+            <param name="defaultValue">The value to initalize.</param>
+            <exception cref="T:EvilGiraffes.Errors.MatrixInitializedException">Will be thrown if the matrix already has been initialized.</exception>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.GetIndexEnumerator">
+            <summary>
+            Will give an enumerator which will give index's of the entire array instead of directly enumerating.
+            </summary>
+            <returns>IEnumerator of type Point.</returns>
+        </member>
+        <member name="M:EvilGiraffes.Collections.Matrix2D`1.GetEnumerator">
+            <summary>
+            Will give an Enumerator to enumerate over values inside matrix.
+            </summary>
+            <returns>IEnumerator of type T.</returns>
+        </member>
+        <member name="T:EvilGiraffes.Errors.BaseException">
+            <summary>
+            Base class for exceptions in this project. 
+            </summary>
+        </member>
+        <member name="T:EvilGiraffes.Functools.IRunner">
+            <summary>
+            Implementation details to be ran in <see cref="T:EvilGiraffes.Functools.RunUntillComplete"/>.
+            </summary>
+        </member>
+        <member name="M:EvilGiraffes.Functools.IRunner.Execute(EvilGiraffes.Functools.RunUntillComplete)">
+            <summary>
+            Executes the loop.
+            </summary>
+            <param name="runner">Will give you the instance of the runner which is looping the function.</param>
+        </member>
+        <member name="T:EvilGiraffes.Functools.IRunner`1">
+            <summary>
+            Implementation details to be ran in <see cref="T:EvilGiraffes.Functools.RunUntillComplete`1"/>.
+            </summary>
+            <typeparam name="TReturn">Return type from the function.</typeparam>
+        </member>
+        <member name="M:EvilGiraffes.Functools.IRunner`1.Execute(EvilGiraffes.Functools.RunUntillComplete{`0})">
+            <summary>
+            Executes the loop.
+            </summary>
+            <param name="runner"><inheritdoc cref="M:EvilGiraffes.Functools.IRunner.Execute(EvilGiraffes.Functools.RunUntillComplete)" path="/param[@name='runner']"/></param>
+            <returns>TReturn is the return value you want to return in the loop. Bool returns TRUE if function was successful, FALSE if function was unsuccessful</returns>
+        </member>
+        <member name="T:EvilGiraffes.Functools.RunUntillComplete">
+            <summary>
+            A basic completion runner which will return void.
+            </summary>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillComplete.#ctor(System.Action{EvilGiraffes.Functools.RunUntillComplete},System.Int32)">
+            <summary>
+            Will construct a new instance of a completion runner. 
+            </summary>
+            <param name="func">The function that should run in the loop.</param>
+            <param name="maxTries"><inheritdoc cref="M:EvilGiraffes.Functools.RunUntillCompleteBase.#ctor(System.Int32)" /> Number is Inclusive.</param>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillComplete.#ctor(EvilGiraffes.Functools.IRunner,System.Int32)">
+            <summary>
+            Will construct a new instance of a completion runner.
+            </summary>
+            <param name="runner">The runner function in which should run in the loop.</param>
+            <param name="maxTries"><inheritdoc cref="M:EvilGiraffes.Functools.RunUntillCompleteBase.#ctor(System.Int32)" /> Number is Inclusive.</param>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillComplete.Execute">
+            <summary>
+            Starts the loop.
+            </summary>
+        </member>
+        <member name="T:EvilGiraffes.Functools.RunUntillComplete`1">
+            <summary>
+            A basic completion runner which will return set value.
+            </summary>
+            <typeparam name="TReturn">The value to return.</typeparam>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillComplete`1.#ctor(System.Func{EvilGiraffes.Functools.RunUntillComplete{`0},`0},System.Int32)">
+            <summary>
+            Will construct a new instance of a completion runner.
+            </summary>
+            <param name="func">The function that should run in the loop.</param>
+            <param name="maxTries"><inheritdoc cref="M:EvilGiraffes.Functools.RunUntillCompleteBase.#ctor(System.Int32)" /> Number is Inclusive.</param>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillComplete`1.#ctor(EvilGiraffes.Functools.IRunner{`0},System.Int32)">
+            <summary>
+            Will construct a new instance of a completion runner.
+            </summary>
+            <param name="runner">The runner function in which should run in the loop.</param>
+            <param name="maxTries"><inheritdoc cref="M:EvilGiraffes.Functools.RunUntillCompleteBase.#ctor(System.Int32)" /> Number is Inclusive.</param>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillComplete`1.Execute">
+            <summary>
+            <inheritdoc cref="M:EvilGiraffes.Functools.RunUntillComplete.Execute"/>
+            </summary>
+            <returns>Returns the return value of the runner function.</returns>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillCompleteBase.#ctor(System.Int32)">
+            <summary>
+            Base implementation of the completion runner constructor.
+            </summary>
+            <param name="maxTries">Maximum amount of tries untill it breaks out of loop, defaults to -1 which means it will run infinitely.</param>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillCompleteBase.Break">
+            <summary>
+            Will break the loop.
+            </summary>
+        </member>
+        <member name="M:EvilGiraffes.Functools.RunUntillCompleteBase._Continue">
+            <summary>
+            Checks whether or not the loop should continue.
+            </summary>
+            <returns>TRUE if the loop should continue, FALSE if the loop should break.</returns>
+        </member>
+    </members>
+</doc>

@@ -8,16 +8,16 @@
             "name": "TestDebug",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "buildDebug",
+            "preLaunchTask": "allBuildDebug",
             "program": "dotnet",
             "args": [
                 "test",
                 "--logger",
                 "trx",
                 "--results-directory",
-                "src/Tests/TestResults"
+                "TestResults"
             ],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/EvilGiraffes.Tests",
             "console": "internalConsole",
             "stopAtEntry": false
         },
@@ -25,16 +25,16 @@
             "name": "TestRelease",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "buildRelease",
+            "preLaunchTask": "allBuildRelease",
             "program": "dotnet",
             "args": [
                 "test",
                 "--logger",
                 "trx",
                 "--results-directory",
-                "src/Tests/TestResults"
+                "TestResults"
             ],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/EvilGiraffes.Tests",
             "console": "internalConsole",
             "stopAtEntry": false
         },
