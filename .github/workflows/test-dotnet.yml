@@ -24,8 +24,8 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore EvilGiraffes.Tests
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build EvilGiraffes.Tests --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test EvilGiraffes.Tests --no-build --verbosity normal
