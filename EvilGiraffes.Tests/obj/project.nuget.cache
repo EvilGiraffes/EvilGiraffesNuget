@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FVHst+cjTDlOnbpL+xdcjblvL4lDmWauT2YaUiDanjQnT1FbvxzFoUgyq1KjdAR4VqrZb6uw032B+3UYZ6701Q==",
+  "dgSpecHash": "dtMp2bz8IbpqHza9MKXr7/bd32sVIZnH6gXAKW2m7s+cROB40q7mw+l0O6UebVL7mQblFU2MUGHHZFSBpFIaVA==",
   "success": true,
-  "projectFilePath": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj",
+  "projectFilePath": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thomas\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.codecoverage\\17.2.0\\microsoft.codecoverage.17.2.0.nupkg.sha512",

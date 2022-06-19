@@ -147,6 +147,28 @@
             Base class for exceptions in this project. 
             </summary>
         </member>
+        <member name="T:EvilGiraffes.Errors.MatrixInitializedException">
+            <summary>
+            Will be thrown if the matrix has already been initialized.
+            </summary>
+        </member>
+        <member name="T:EvilGiraffes.Errors.MatrixOutOfBoundsException">
+            <summary>
+            Will be thrown if setting out of bounds of the matrix.
+            </summary>
+        </member>
+        <member name="P:EvilGiraffes.Errors.MatrixOutOfBoundsException.MatrixLength">
+            <summary>
+            The length of matrix row or column
+            </summary>
+            <value>Int value of the length</value>
+        </member>
+        <member name="P:EvilGiraffes.Errors.MatrixOutOfBoundsException.FullLength">
+            <summary>
+            
+            </summary>
+            <value></value>
+        </member>
         <member name="T:EvilGiraffes.Functools.IRunner">
             <summary>
             Implementation details to be ran in <see cref="T:EvilGiraffes.Functools.RunUntillComplete"/>.

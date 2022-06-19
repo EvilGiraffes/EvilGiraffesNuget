@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj": {}
+    "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj": {}
   },
   "projects": {
-    "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj": {
+    "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj",
+        "projectUniqueName": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj",
         "projectName": "EvilGiraffes.Tests",
-        "projectPath": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj",
+        "projectPath": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\EvilGiraffes.Tests.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\obj\\",
+        "outputPath": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj": {
-                "projectPath": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj"
+              "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj": {
+                "projectPath": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj": {
+    "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj": {
       "version": "1.0.7",
       "restore": {
-        "projectUniqueName": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj",
+        "projectUniqueName": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj",
         "projectName": "EvilGiraffes",
-        "projectPath": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj",
+        "projectPath": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\EvilGiraffes.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "d:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\obj\\",
+        "outputPath": "D:\\Programmering\\VScodeProjects\\EvilGiraffesNuget\\EvilGiraffes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
